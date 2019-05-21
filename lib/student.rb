@@ -16,7 +16,7 @@ class Student
               grade INTEGER
           );
           SQL
-          
+        
   end
   
   
