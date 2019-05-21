@@ -16,14 +16,16 @@ class Student
               grade INTEGER
           );
           SQL
-        DB[:conn].execute(sql)
+      
+      DB[:conn].execute(sql)
   end
   
   def self.drop_table
     sql = <<-SQL
           DROP TABLE students;
           SQL
-        DB[:conn].execute(sql)
+      
+      DB[:conn].execute(sql)
   end
   
   def save
@@ -32,7 +34,7 @@ class Student
           VALUES (?, ?)
           SQL
           
-        DB[:conn].execute(sql, self.name, self.grade)
+      DB[:conn].execute(sql, self.name, self.grade)
   end
   
   
